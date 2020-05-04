@@ -10,6 +10,7 @@ export default function App() {
             <Link to="/" className='btn-default'>Home</Link>
             <Link to="/profile" className='btn-default'>Profile</Link>
             <Link to="/directory" className='btn-default'>Directory</Link>
+            <Link to="/list" className='btn-default'>List</Link>
         </div>
     )
 }

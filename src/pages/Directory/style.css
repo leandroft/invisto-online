@@ -3,7 +3,7 @@ header{
 }
 
 .banner{
-  background-image: url(img/profile.jpg);
+  background-image: url(../../assets/img/banner.jpg);
   width: 100%;
   height: 92vh;
   background-repeat: no-repeat;
@@ -36,7 +36,11 @@ a{
 
 .acao button{
   width: 80%; 
-  z-index: 10; 
+  z-index: 10;
+}
+
+.acao button a{
+  color: white;
 }
 
 .acao p{
@@ -101,6 +105,19 @@ a{
   margin-bottom: 40px;
 }
 
+
+
+.imgDestaque{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.imgDestaque img{
+  margin-right: 2rem;
+  width: 30%;
+}
+
 .destaque h1{
   color: #10C0C6;
   font-size: 1.5rem;
@@ -114,9 +131,12 @@ a{
   font-size: 1.2rem;
 }
 
+.destaque p{
+  line-height: 1.5;
+}
+
 .destaque p a{
   margin-right: 20px;
-  
 }
 
 @media (max-width: 620px){
@@ -141,5 +161,17 @@ a{
     width: 80%;
     margin-top: 70vh;
     padding: 20px;  
+  }
+
+  .imgDestaque{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .imgDestaque img{
+    margin-bottom: 2rem;
+    width: 90%;
   }
 }

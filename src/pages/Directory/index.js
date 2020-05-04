@@ -1,8 +1,14 @@
 import React from 'react';
-//import { Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 import './style.css'
 
+import profile1 from '../../assets/img/profile1.jpg';
+import profile2 from '../../assets/img/profile2.jpg';
+import profile3 from '../../assets/img/profile3.jpg';
+import profile4 from '../../assets/img/profile4.jpg';
+
+import {FiChevronDown} from 'react-icons/fi';
 
 export default function Directory() {
     return (
@@ -15,7 +21,7 @@ export default function Directory() {
                     <div className="acao">
                         <logo><a>invisto</a>.online</logo>
                         <p>Encontre um profissional de investimentos que combina com você</p>
-                        <button className='btn-default'>Buscar Profissional de Investimento</button>
+                        <button className='btn-default'><Link to="/list"><a>Buscar Profissional de Investimento</a></Link></button>
                         <p>É um acessor ou consultor?</p>
                         <button className='btn-default'>Cadastre-se na Plataforma</button>
                     </div>
@@ -34,8 +40,12 @@ export default function Directory() {
 
                 <div className="destaque">
                     <h1>Profissionais em Destaque</h1>
-                    <img src="img/perfil.jpg" alt="Foto do Perfil"/>
-
+                    <div className="imgDestaque">
+                        <img src={profile1} alt="Foto do perfil"/>
+                        <img src={profile2} alt="Foto do perfil"/>
+                        <img src={profile3} alt="Foto do perfil"/>
+                        <img src={profile4} alt="Foto do perfil"/>
+                    </div>
                     <h2>Profissionais por Cidade</h2>
                     <p>
                         <a>São Paulo (SP)</a>
@@ -47,7 +57,7 @@ export default function Directory() {
                         <a>Campinas (SP)</a>
                         <a>Brasília (DF)</a>
                     </p>
-                    <p><a>Ver mais Cidades</a></p>
+                    <p><a>Ver mais Cidades <FiChevronDown /></a></p>
 
                     <h2>Profissionais por Estado</h2>
                     <p>
@@ -58,7 +68,7 @@ export default function Directory() {
                         <a>Rio Grande do Sul (RS)</a>
                         <a>Santa Catarina (SC)</a>                        
                     </p>
-                    <p><a>Ver mais Estados</a></p>
+                    <p><a>Ver mais Estados <FiChevronDown /></a></p>
                     
                     <h2>Profissionais por Especialidades</h2>
                     <p>
@@ -69,7 +79,7 @@ export default function Directory() {
                         <a>Funcionários Privados</a>
                         <a>Agropecuários</a>
                     </p>
-                    <p><a>Ver mais Especialidades</a></p>
+                    <p><a>Ver mais Especialidades <FiChevronDown /></a></p>
 
                 </div>
             </main>

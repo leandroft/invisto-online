@@ -46,8 +46,8 @@ export default function Profile() {
                   <th><b>Especialidade</b></th>
                   <td><a>Autônomos</a></td>
                   <td><a>Médicos</a></td>
-                  <td><a>Advogados</a></td>
-                  <td><a>Agropecuária</a></td>
+                  <td className="responsivo"><a>Advogados</a></td>
+                  <td className="responsivo"><a>Agropecuária</a></td>
                   <td><a>+</a></td>
                 </tr>
 
@@ -55,10 +55,10 @@ export default function Profile() {
                   <th><b>Expertise</b></th>
                   <td><a>Renda Fixa</a></td>
                   <td><a>Renda Variável</a></td>
-                  <td><a>Ações</a></td>
-                  <td><a>Internacional</a></td>
-                  <td><a>Câmbio</a></td>
-                  <td><a>Imóveis</a></td>
+                  <td className="responsivo"><a>Ações</a></td>
+                  <td className="responsivo"><a>Internacional</a></td>
+                  <td className="responsivo"><a>Câmbio</a></td>
+                  <td className="responsivo"><a>Imóveis</a></td>
                   <td><a>+</a></td>
                 </tr>
                 </table>

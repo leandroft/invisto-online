@@ -79,6 +79,10 @@
   margin-right: 2rem;
 }
 
+.imgPerfil img{
+  width: 100%;
+}
+
 .descricao{
   margin-top: 2vh;
 }
@@ -153,5 +157,15 @@
 @media (max-width: 620px){
   html {
     font-size: 90%;
+  }
+  .responsivo{
+    display: none;
+  }
+  .profile{
+    width: 90%;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 }

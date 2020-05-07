@@ -15,7 +15,9 @@ import api from '../../services/api';
 import './style.css'
 
 
+
 export default function Profile() {
+    
   const [users, setUsers] = useState([]);
   useEffect(() => {
     api.get('user').then(response => {
@@ -85,7 +87,7 @@ export default function Profile() {
                   <h2>{user.kind_professional}</h2>
                   <p>{user.specialization}</p>
                   <p><FiMessageSquare color="rgb(44, 44, 44)"/> 3 Avaliações de Clientes</p>
-                  <a>PRO</a>
+                  {user.user_pro ? <a>PRO</a> : null}
                 </div>
               </div>
             ))}
